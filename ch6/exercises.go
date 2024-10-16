@@ -47,6 +47,7 @@ func main() {
 	// its changes are not reflected in the original slice in main. Only changes that will occur
 	// in the original slice are ones made to elements in the original length.
 
+	// exercise 3
 	startTime := time.Now()
 	fmt.Println("Time Started: ", startTime)
 
