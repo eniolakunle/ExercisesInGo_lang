@@ -23,7 +23,7 @@ Set the environment variable GODEBUG=gctrace=1 to see when garbage collections
 happen and see how changing GOGC changes the number of garbage collections.
 What happens if you create the slice with a capacity of 10,000,000?
 
-### Exercise 3 Results:
+### Exercise III Results:
 #### Populating splice without a capacity 🐌
 ```
 Time Started:  2024-10-16 01:53:51.293392 -0400 EDT m=+0.000150215
