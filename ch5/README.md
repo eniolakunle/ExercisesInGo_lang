@@ -17,4 +17,4 @@ Use defer to make sure the file is closed properly.
 Write a function called prefixer that has an input parameter of type string
 and returns a function that has an input parameter of type string and returns a
 string. The returned function should prefix its input with the string passed into
-prefixer. Use the following main function to test prefixer
+prefixer. Use the following main function to test prefixer.
