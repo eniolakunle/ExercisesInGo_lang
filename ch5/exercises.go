@@ -8,12 +8,17 @@ import (
 )
 
 // exercise 1
-func divi(num, den int) (result int, err error) {
-	if den == 0 {
-		return 0, errors.New("DIVISION BY ZERO")
+var (
+	add = func(i, j int) (int, error) { return i + j, nil }
+	sub = func(i, j int) (int, error) { return i - j, nil }
+	mul = func(i, j int) (int, error) { return i * j, nil }
+	div = func(i, j int) (int, error) {
+		if j == 0 {
+			return 0, errors.New("DIVISION BY ZERO")
+		}
+		return i / j, nil
 	}
-	return num / den, nil
-}
+)
 
 // exercise 2
 func fileLen(file string) (length int, err error) {
@@ -47,7 +52,7 @@ func prefixer(s string) func(string) string {
 func main() {
 	// exercise 1
 	// ------------------
-	ans, err := divi(1, 0)
+	ans, err := div(1, 0)
 	if err != nil {
 		fmt.Println(err)
 	} else {
@@ -57,6 +62,7 @@ func main() {
 	// exercise 2
 	// ----------------
 	fmt.Println(fileLen("exercises.go"))
+	fmt.Println(fileLen("doesnotexist.go"))
 
 	//exercise 3
 	//--------------
