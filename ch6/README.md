@@ -42,7 +42,8 @@ Duration:  2.086162013s
 
 #### Populating splice w/ a 10 million entry capacity 🐎
 
-```Time Started:  2024-10-16 01:54:05.447712 -0400 EDT m=+0.000139864
+```
+Time Started:  2024-10-16 01:54:05.447712 -0400 EDT m=+0.000139864
 gc 1 @0.001s 22%: 0.022+244+0.026 ms clock, 0.088+0/220/441+0.10 ms cpu, 381->381->381 MB, 382 MB goal, 0 MB stacks, 0 MB globals, 4 P
 Duration:  300.642322ms
 ```
